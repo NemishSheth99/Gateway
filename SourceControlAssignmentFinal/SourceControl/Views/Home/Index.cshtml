@@ -1,0 +1,8 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<h3>@Html.ActionLink("Your Details", "Details", new { id = Session["userId"] } )</h3>

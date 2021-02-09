@@ -1,0 +1,81 @@
+2021-02-09 22:57:29.0355 INFO User SignedOut
+2021-02-09 22:57:41.1731 INFO User entered in Login Controller.
+2021-02-09 22:57:44.3385 INFO User entered in Index Controller.
+2021-02-09 22:57:46.9807 INFO User entered in Details Controler.
+2021-02-09 22:57:50.1395 INFO User entered in Index Controller.
+2021-02-09 22:57:51.5815 INFO User entered in Details Controler.
+2021-02-09 22:57:54.0831 INFO User entered in Edit Controller to get Edit Form.
+2021-02-09 22:57:57.5067 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 22:58:03.9913 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 22:58:07.1538 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 22:58:19.4797 INFO User entered in Index Controller.
+2021-02-09 22:58:21.4642 INFO User entered in Details Controler.
+2021-02-09 22:58:24.5595 INFO User SignedOut
+2021-02-09 23:02:50.4066 INFO User SignedOut
+2021-02-09 23:03:04.3236 INFO User entered in Login Controller.
+2021-02-09 23:03:20.3704 INFO User entered in Login Controller.
+2021-02-09 23:03:20.4524 INFO User entered in Index Controller.
+2021-02-09 23:03:22.8064 INFO User entered in Details Controler.
+2021-02-09 23:03:24.8303 INFO User entered in Edit Controller to get Edit Form.
+2021-02-09 23:03:33.8572 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 23:04:02.0813 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 23:06:08.4709 INFO User SignedOut
+2021-02-09 23:06:47.9099 INFO User entered in Login Controller.
+2021-02-09 23:06:50.0550 INFO User entered in Index Controller.
+2021-02-09 23:06:51.8540 INFO User entered in Details Controler.
+2021-02-09 23:06:55.0671 INFO User entered in Edit Controller to get Edit Form.
+2021-02-09 23:07:35.3087 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 23:09:55.0741 INFO User SignedOut
+2021-02-09 23:10:11.4717 INFO User entered in Register Controller.
+2021-02-09 23:11:53.4124 INFO User SignedOut
+2021-02-09 23:12:08.7181 INFO User entered in Login Controller.
+2021-02-09 23:12:11.0873 INFO User entered in Index Controller.
+2021-02-09 23:12:12.7722 INFO User entered in Details Controler.
+2021-02-09 23:12:14.5030 INFO User entered in Edit Controller to get Edit Form.
+2021-02-09 23:12:33.0506 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 23:25:07.1372 INFO User SignedOut
+2021-02-09 23:26:20.0480 INFO User entered in Register Controller.
+2021-02-09 23:28:24.3381 INFO User SignedOut
+2021-02-09 23:28:35.2803 INFO User entered in Login Controller.
+2021-02-09 23:28:47.7574 INFO User entered in Login Controller.
+2021-02-09 23:28:47.8274 INFO User entered in Index Controller.
+2021-02-09 23:28:50.4031 INFO User entered in Details Controler.
+2021-02-09 23:29:34.3562 INFO User entered in Edit Controller to get Edit Form.
+2021-02-09 23:29:55.1583 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 23:32:10.0045 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 23:32:21.9481 INFO User SignedOut
+2021-02-09 23:32:44.2756 INFO User entered in Register Controller.
+2021-02-09 23:34:28.8940 INFO User SignedOut
+2021-02-09 23:34:52.4661 INFO User entered in Register Controller.
+2021-02-09 23:41:35.0219 INFO User SignedOut
+2021-02-09 23:41:47.9027 INFO User entered in Login Controller.
+2021-02-09 23:41:59.3075 INFO User entered in Login Controller.
+2021-02-09 23:41:59.3745 INFO User entered in Index Controller.
+2021-02-09 23:42:01.2654 INFO User entered in Details Controler.
+2021-02-09 23:42:35.4011 INFO User entered in Edit Controller to get Edit Form.
+2021-02-09 23:42:40.4369 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 23:43:06.1374 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 23:49:02.9756 INFO User SignedOut
+2021-02-09 23:49:20.0986 INFO User entered in Register Controller.
+2021-02-09 23:49:34.0336 INFO User entered in Login Controller.
+2021-02-09 23:49:34.0706 INFO User entered in Index Controller.
+2021-02-09 23:49:43.0749 INFO User entered in Details Controler.
+2021-02-09 23:49:45.2261 INFO User entered in Edit Controller to get Edit Form.
+2021-02-09 23:50:48.4937 INFO User SignedOut
+2021-02-09 23:50:55.5986 INFO User entered in Login Controller.
+2021-02-09 23:50:55.6106 INFO User entered in Index Controller.
+2021-02-09 23:50:58.4195 INFO User entered in Details Controler.
+2021-02-09 23:50:59.9999 INFO User entered in Edit Controller to get Edit Form.
+2021-02-09 23:52:26.2402 INFO User SignedOut
+2021-02-09 23:52:35.1567 INFO User entered in Login Controller.
+2021-02-09 23:52:37.0449 INFO User entered in Index Controller.
+2021-02-09 23:52:38.6445 INFO User entered in Details Controler.
+2021-02-09 23:58:04.6032 INFO User SignedOut
+2021-02-09 23:58:20.6703 INFO User entered in Login Controller.
+2021-02-09 23:58:35.5756 INFO User entered in Register Controller.
+2021-02-09 23:58:42.9451 INFO User entered in Login Controller.
+2021-02-09 23:58:42.9741 INFO User entered in Index Controller.
+2021-02-09 23:58:44.9828 INFO User entered in Details Controler.
+2021-02-09 23:58:46.9864 INFO User entered in Edit Controller to get Edit Form.
+2021-02-09 23:58:49.7278 INFO User entered in Edit Controller by submitting Edit Request.
+2021-02-09 23:59:58.5408 INFO User entered in Edit Controller by submitting Edit Request.
