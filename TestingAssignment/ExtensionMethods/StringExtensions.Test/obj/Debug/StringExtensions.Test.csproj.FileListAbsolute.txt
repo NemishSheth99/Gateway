@@ -1,0 +1,17 @@
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\xunit.runner.reporters.net452.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\xunit.runner.utility.net452.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\xunit.abstractions.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\StringExtensions.Test.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\StringExtensions.Test.pdb
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\xunit.assert.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\xunit.core.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\xunit.execution.desktop.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\StringExtensions.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\bin\Debug\StringExtensions.pdb
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\obj\Debug\StringExtensions.Test.csprojAssemblyReference.cache
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\obj\Debug\StringExtensions.Test.csproj.CoreCompileInputs.cache
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\obj\Debug\StringExtensions.Test.csproj.CopyComplete
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\obj\Debug\StringExtensions.Test.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions.Test\obj\Debug\StringExtensions.Test.pdb

@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Gateway\\TestingAssignment\\ExtensionMethods\\StringExtensions.Test\\StringExtensions.Test.csproj": {}
+  },
+  "projects": {
+    "D:\\Gateway\\TestingAssignment\\ExtensionMethods\\StringExtensions.Test\\StringExtensions.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Gateway\\TestingAssignment\\ExtensionMethods\\StringExtensions.Test\\StringExtensions.Test.csproj",
+        "projectName": "StringExtensions.Test",
+        "projectPath": "D:\\Gateway\\TestingAssignment\\ExtensionMethods\\StringExtensions.Test\\StringExtensions.Test.csproj",
+        "packagesPath": "C:\\Users\\nemi1\\.nuget\\packages\\",
+        "outputPath": "D:\\Gateway\\TestingAssignment\\ExtensionMethods\\StringExtensions.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nemi1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Gateway\\TestingAssignment\\ExtensionMethods\\StringExtensions\\StringExtensions.csproj": {
+                "projectPath": "D:\\Gateway\\TestingAssignment\\ExtensionMethods\\StringExtensions\\StringExtensions.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Gateway\\TestingAssignment\\ExtensionMethods\\StringExtensions\\StringExtensions.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Gateway\\TestingAssignment\\ExtensionMethods\\StringExtensions\\StringExtensions.csproj",
+        "projectName": "StringExtensions",
+        "projectPath": "D:\\Gateway\\TestingAssignment\\ExtensionMethods\\StringExtensions\\StringExtensions.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

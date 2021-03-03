@@ -1,0 +1,6 @@
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions\obj\Debug\StringExtensions.csprojAssemblyReference.cache
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions\obj\Debug\StringExtensions.csproj.CoreCompileInputs.cache
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions\bin\Debug\StringExtensions.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions\bin\Debug\StringExtensions.pdb
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions\obj\Debug\StringExtensions.dll
+D:\Gateway\TestingAssignment\ExtensionMethods\StringExtensions\obj\Debug\StringExtensions.pdb
