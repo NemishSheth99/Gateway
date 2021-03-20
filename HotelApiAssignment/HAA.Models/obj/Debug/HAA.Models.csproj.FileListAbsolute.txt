@@ -1,0 +1,6 @@
+D:\HotelApiAssignment\HAA.Models\bin\Debug\HAA.Models.dll
+D:\HotelApiAssignment\HAA.Models\bin\Debug\HAA.Models.pdb
+D:\HotelApiAssignment\HAA.Models\obj\Debug\HAA.Models.csproj.CoreCompileInputs.cache
+D:\HotelApiAssignment\HAA.Models\obj\Debug\HAA.Models.dll
+D:\HotelApiAssignment\HAA.Models\obj\Debug\HAA.Models.pdb
+D:\HotelApiAssignment\HAA.Models\obj\Debug\HAA.Models.csprojAssemblyReference.cache

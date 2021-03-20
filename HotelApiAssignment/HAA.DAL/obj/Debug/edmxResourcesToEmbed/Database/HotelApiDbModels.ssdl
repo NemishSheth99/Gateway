@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebApiAssModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblBookingStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoomId" Type="int" Nullable="false" />
+    <Property Name="BookingDate" Type="date" Nullable="false" />
+    <Property Name="BookingStatus" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblHotel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="120" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Pincode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="ContactNumber" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ContactPerson" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Website" Type="varchar" MaxLength="50" />
+    <Property Name="Facebook" Type="varchar" MaxLength="70" />
+    <Property Name="Twitter" Type="varchar" MaxLength="70" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="UpdatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblRoom">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HotelId" Type="int" Nullable="false" />
+    <Property Name="RoomName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RoomCategory" Type="tinyint" Nullable="false" />
+    <Property Name="RoomPrice" Type="money" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedDate" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="UpdatedDate" Type="date" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="530" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tblBookingStatus_tblRoom">
+    <End Role="tblRoom" Type="Self.tblRoom" Multiplicity="1" />
+    <End Role="tblBookingStatus" Type="Self.tblBookingStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRoom">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblBookingStatus">
+        <PropertyRef Name="RoomId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblRoom_tblHotel">
+    <End Role="tblHotel" Type="Self.tblHotel" Multiplicity="1" />
+    <End Role="tblRoom" Type="Self.tblRoom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblHotel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblRoom">
+        <PropertyRef Name="HotelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WebApiAssModelStoreContainer">
+    <EntitySet Name="tblBookingStatus" EntityType="Self.tblBookingStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblHotel" EntityType="Self.tblHotel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRoom" EntityType="Self.tblRoom" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tblBookingStatus_tblRoom" Association="Self.FK_tblBookingStatus_tblRoom">
+      <End Role="tblRoom" EntitySet="tblRoom" />
+      <End Role="tblBookingStatus" EntitySet="tblBookingStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblRoom_tblHotel" Association="Self.FK_tblRoom_tblHotel">
+      <End Role="tblHotel" EntitySet="tblHotel" />
+      <End Role="tblRoom" EntitySet="tblRoom" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

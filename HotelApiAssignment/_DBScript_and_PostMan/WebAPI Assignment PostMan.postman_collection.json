@@ -1,0 +1,1611 @@
+{
+	"info": {
+		"_postman_id": "7b506f6a-3d55-46bf-9a46-40624afdd707",
+		"name": "WebAPI Assignment PostMan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44395/api/hotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44395/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"hotel"
+					]
+				},
+				"description": "Unauthorized\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/hotel",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"hotel"
+					]
+				},
+				"description": "Authorized request"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"GG\",\r\n    \"Address\":\"GG AA\",\r\n    \"City\":\"AA\",\r\n    \"Pincode\":\"900000\",\r\n    \"ContactNumber\":\"1111111111\",\r\n    \"ContactPerson\":\"GG\",\r\n    \"CreatedBy\":\"GG\",\r\n    \"UpdatedBy\":\"GG\",\r\n    \"IsActive\":true,\r\n    \"Rooms\":[\r\n        {\r\n            \"RoomName\":\"GG 001\",\r\n            \"RoomCategory\":\"Regular\",\r\n            \"RoomPrice\":\"2000\",\r\n            \"IsActive\":true,\r\n            \"CreatedBy\":\"GG\",\r\n            \"UpdatedBy\":\"GG\"\r\n        },\r\n        {\r\n            \"RoomName\":\"GG 002\",\r\n            \"RoomCategory\":\"Premimum\",\r\n            \"RoomPrice\":\"4000\",\r\n            \"IsActive\":true,\r\n            \"CreatedBy\":\"GG\",\r\n            \"UpdatedBy\":\"GG\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"AA\",\r\n    \"Address\":\"AA AA\",\r\n    \"City\":\"AA\",\r\n    \"Pincode\":\"900000\",\r\n    \"ContactNumber\":\"1111111111\",\r\n    \"ContactPerson\":\"AA\",\r\n    \"CreatedBy\":\"AA\",\r\n    \"UpdatedBy\":\"AA\",\r\n    \"IsActive\":true,\r\n    \"Rooms\":[\r\n        {\r\n            \"RoomName\":\"AA 001\",\r\n            \"RoomCategory\":\"Regular\",\r\n            \"RoomPrice\":\"2000\",\r\n            \"IsActive\":true,\r\n            \"CreatedBy\":\"AA\",\r\n            \"UpdatedBy\":\"AA\"\r\n        },\r\n        {\r\n            \"RoomName\":\"AA 002\",\r\n            \"RoomCategory\":\"Premimum\",\r\n            \"RoomPrice\":\"5000\",\r\n            \"IsActive\":true,\r\n            \"CreatedBy\":\"AA\",\r\n            \"UpdatedBy\":\"AA\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"DD\",\r\n    \"Address\":\"DD ZZ\",\r\n    \"City\":\"ZZ\",\r\n    \"Pincode\":\"100000\",\r\n    \"ContactNumber\":\"1111111111\",\r\n    \"ContactPerson\":\"DD\",\r\n    \"CreatedBy\":\"DD\",\r\n    \"UpdatedBy\":\"DD\",\r\n    \"IsActive\":true,\r\n    \"Rooms\":[\r\n        {\r\n            \"RoomName\":\"DD 001\",\r\n            \"RoomCategory\":\"Regular\",\r\n            \"RoomPrice\":\"5000\",\r\n            \"IsActive\":true,\r\n            \"CreatedBy\":\"DD\",\r\n            \"UpdatedBy\":\"DD\"\r\n        },\r\n        {\r\n            \"RoomName\":\"DD 002\",\r\n            \"RoomCategory\":\"Premimum\",\r\n            \"RoomPrice\":\"7000\",\r\n            \"IsActive\":true,\r\n            \"CreatedBy\":\"DD\",\r\n            \"UpdatedBy\":\"DD\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"AA\",\r\n    \"Address\":\"AA ZZ\",\r\n    \"City\":\"ZZ\",\r\n    \"Pincode\":\"100000\",\r\n    \"ContactNumber\":\"1111111111\",\r\n    \"ContactPerson\":\"AA\",\r\n    \"CreatedBy\":\"AAA\",\r\n    \"UpdatedBy\":\"AA\",\r\n    \"IsActive\":true,\r\n    \"Rooms\":[\r\n        {\r\n            \"RoomName\":\"AA 001\",\r\n            \"RoomCategory\":\"Regular\",\r\n            \"RoomPrice\":\"3000\",\r\n            \"IsActive\":true,\r\n            \"CreatedBy\":\"AA\",\r\n            \"UpdatedBy\":\"AA\"\r\n        },\r\n        {\r\n            \"RoomName\":\"AA 002\",\r\n            \"RoomCategory\":\"Classic\",\r\n            \"RoomPrice\":\"4000\",\r\n            \"IsActive\":true,\r\n            \"CreatedBy\":\"AA\",\r\n            \"UpdatedBy\":\"AA\"\r\n        },\r\n        {\r\n            \"RoomName\":\"AA 003\",\r\n            \"RoomCategory\":\"Premimum\",\r\n            \"RoomPrice\":\"5000\",\r\n            \"IsActive\":true,\r\n            \"CreatedBy\":\"AA\",\r\n            \"UpdatedBy\":\"AA\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"AAA\",\r\n    \"Address\":\"S.G. Highway\",\r\n    \"City\":\"Ahmedabad\",\r\n    \"Pincode\":\"368778\",\r\n    \"ContactNumber\":\"9999999999\",\r\n    \"ContactPerson\":\"AAA\",\r\n    \"CreatedBy\":\"AAA\",\r\n    \"UpdatedBy\":\"AAA\",\r\n    \"IsActive\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"AAA\",\r\n    \"Address\":\"S.G. Highway\",\r\n    \"City\":\"Ahmedabad\",\r\n    \"Pincode\":\"368778\",\r\n    \"ContactNumber\":\"999999999\",\r\n    \"ContactPerson\":\"AAA\",\r\n    \"CreatedBy\":\"AAA\",\r\n    \"UpdatedBy\":\"AAA\",\r\n    \"IsActive\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/hotel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/hotel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"GG\",\r\n    \"Address\":\"GG AA\",\r\n    \"City\":\"AA\",\r\n    \"Pincode\":\"900000\",\r\n    \"ContactNumber\":\"1111111111\",\r\n    \"ContactPerson\":\"GG\",\r\n    \"CreatedBy\":\"GG\",\r\n    \"UpdatedBy\":\"GG\",\r\n    \"IsActive\":true,\r\n    \"Rooms\":[\r\n        {\r\n            \"RoomName\":\"GG 001\",\r\n            \"RoomCategory\":\"Regular\",\r\n            \"RoomPrice\":\"2000\",\r\n            \"IsActive\":true,\r\n            \"CreatedBy\":\"GG\",\r\n            \"UpdatedBy\":\"GG\"\r\n        },\r\n        {\r\n            \"RoomName\":\"GG 002\",\r\n            \"RoomCategory\":\"Premimum\",\r\n            \"RoomPrice\":\"4000\",\r\n            \"IsActive\":true,\r\n            \"CreatedBy\":\"GG\",\r\n            \"UpdatedBy\":\"GG\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city=AA&pincode=100000&price=4000&category=2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city=AA&pincode=100000&price=4000&category=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "AA"
+						},
+						{
+							"key": "pincode",
+							"value": "100000"
+						},
+						{
+							"key": "price",
+							"value": "4000"
+						},
+						{
+							"key": "category",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city=ZZ&pincode=100000&price=4000&category=2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city=ZZ&pincode=100000&price=4000&category=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "ZZ"
+						},
+						{
+							"key": "pincode",
+							"value": "100000"
+						},
+						{
+							"key": "price",
+							"value": "4000"
+						},
+						{
+							"key": "category",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city=ZZ&pincode&price=4000&category=2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city=ZZ&pincode&price=4000&category=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "ZZ"
+						},
+						{
+							"key": "pincode",
+							"value": null
+						},
+						{
+							"key": "price",
+							"value": "4000"
+						},
+						{
+							"key": "category",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city=ZZ&pincode&price&category",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city=ZZ&pincode&price&category",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "ZZ"
+						},
+						{
+							"key": "pincode",
+							"value": null
+						},
+						{
+							"key": "price",
+							"value": null
+						},
+						{
+							"key": "category",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city=AA&pincode&price&category",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city=AA&pincode&price&category",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "AA"
+						},
+						{
+							"key": "pincode",
+							"value": null
+						},
+						{
+							"key": "price",
+							"value": null
+						},
+						{
+							"key": "category",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city&pincode&price&category",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city&pincode&price&category",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": null
+						},
+						{
+							"key": "pincode",
+							"value": null
+						},
+						{
+							"key": "price",
+							"value": null
+						},
+						{
+							"key": "category",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city=AA&pincode=100000&price=4000&category=2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city=AA&pincode=100000&price=4000&category=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "AA"
+						},
+						{
+							"key": "pincode",
+							"value": "100000"
+						},
+						{
+							"key": "price",
+							"value": "4000"
+						},
+						{
+							"key": "category",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city=ZZ&pincode=100000&price=4000&category=2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city=ZZ&pincode=100000&price=4000&category=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "ZZ"
+						},
+						{
+							"key": "pincode",
+							"value": "100000"
+						},
+						{
+							"key": "price",
+							"value": "4000"
+						},
+						{
+							"key": "category",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city=ZZ&pincode&price=4000&category=2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city=ZZ&pincode&price=4000&category=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "ZZ"
+						},
+						{
+							"key": "pincode",
+							"value": null
+						},
+						{
+							"key": "price",
+							"value": "4000"
+						},
+						{
+							"key": "category",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city=ZZ&pincode&price&category",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city=ZZ&pincode&price&category",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "ZZ"
+						},
+						{
+							"key": "pincode",
+							"value": null
+						},
+						{
+							"key": "price",
+							"value": null
+						},
+						{
+							"key": "category",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city=AA&pincode&price&category",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city=AA&pincode&price&category",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "AA"
+						},
+						{
+							"key": "pincode",
+							"value": null
+						},
+						{
+							"key": "price",
+							"value": null
+						},
+						{
+							"key": "category",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room?city&pincode&price&category",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44395/api/room?city&pincode&price&category",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": null
+						},
+						{
+							"key": "pincode",
+							"value": null
+						},
+						{
+							"key": "price",
+							"value": null
+						},
+						{
+							"key": "category",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/room/CreateRoom",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"HotelId\": 24,\r\n        \"RoomName\": \"AA 100\",\r\n        \"RoomCategory\": 2,\r\n        \"RoomPrice\": 5000.0000,\r\n        \"IsActive\": true,\r\n        \"CreatedDate\": \"2021-03-20T00:00:00\",\r\n        \"CreatedBy\": \"AA\",\r\n        \"UpdatedDate\": \"0001-01-01T00:00:00\",\r\n        \"UpdatedBy\": \"AA\",\r\n        \"Bookings\": null,\r\n        \"Hotel\": null\r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/room/CreateRoom",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"room",
+						"CreateRoom"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"RoomId\":86,\r\n    \"BookingDate\":\"2021/3/3\",\r\n    \"BookingStatus\":\"Definitive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"booking"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "86",
+							"disabled": true
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2021/3/3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/booking?roomId=86&date=2021/3/3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"RoomId\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/booking?roomId=86&date=2021/3/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"booking"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "86"
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2021/3/3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/booking?roomId=86&date=2021/3/3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/booking?roomId=86&date=2021/3/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"booking"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "86"
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2021/3/3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/booking?roomId=86&date=2021/3/3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/booking?roomId=86&date=2021/3/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"booking"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "86"
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2021/3/3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/booking?bookingId=5",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/booking?bookingId=5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"booking"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "86",
+							"disabled": true
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2021/3/3",
+							"disabled": true
+						},
+						{
+							"key": "bookingId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/booking",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 5,\r\n    \"RoomId\":86,\r\n    \"BookingDate\":\"2019/3/3\",\r\n    \"BookingStatus\":\"Optional\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"booking"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "86",
+							"disabled": true
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2021/3/3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/booking",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 5,\r\n    \"RoomId\":86,\r\n    \"BookingDate\":\"2019/3/3\",\r\n    \"BookingStatus\":\"Definitive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"booking"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "86",
+							"disabled": true
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2021/3/3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 5,\r\n    \"RoomId\":86,\r\n    \"BookingDate\":\"2021/3/3\",\r\n    \"BookingStatus\":\"Definitive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"booking"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "86",
+							"disabled": true
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2021/3/3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"RoomId\":86,\r\n    \"BookingDate\":\"2021/3/3\",\r\n    \"BookingStatus\":\"Definitive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/booking",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"booking"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "86",
+							"disabled": true
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2021/3/3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/booking?roomId=86&date=2021/3/3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"RoomId\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/booking?roomId=86&date=2021/3/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"booking"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "86"
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2021/3/3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44395/api/booking?roomId=86&date=2021/3/3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TmVtaXNoOk5lbWlzaA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/booking?roomId=86&date=2021/3/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"booking"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "86"
+						},
+						{
+							"key": "pincode",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "date",
+							"value": "2021/3/3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

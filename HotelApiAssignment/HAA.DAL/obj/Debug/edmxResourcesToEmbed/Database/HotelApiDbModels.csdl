@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebApiAssModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblBookingStatu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoomId" Type="Int32" Nullable="false" />
+    <Property Name="BookingDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="BookingStatus" Type="Byte" Nullable="false" />
+    <NavigationProperty Name="tblRoom" Relationship="Self.FK_tblBookingStatus_tblRoom" FromRole="tblBookingStatus" ToRole="tblRoom" />
+  </EntityType>
+  <EntityType Name="tblHotel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pincode" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ContactNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ContactPerson" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Website" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Facebook" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="Twitter" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UpdatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tblRooms" Relationship="Self.FK_tblRoom_tblHotel" FromRole="tblHotel" ToRole="tblRoom" />
+  </EntityType>
+  <EntityType Name="tblRoom">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HotelId" Type="Int32" Nullable="false" />
+    <Property Name="RoomName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RoomCategory" Type="Byte" Nullable="false" />
+    <Property Name="RoomPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CreatedBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UpdatedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tblBookingStatus" Relationship="Self.FK_tblBookingStatus_tblRoom" FromRole="tblRoom" ToRole="tblBookingStatus" />
+    <NavigationProperty Name="tblHotel" Relationship="Self.FK_tblRoom_tblHotel" FromRole="tblRoom" ToRole="tblHotel" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="530" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tblBookingStatus_tblRoom">
+    <End Role="tblRoom" Type="Self.tblRoom" Multiplicity="1" />
+    <End Role="tblBookingStatus" Type="Self.tblBookingStatu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRoom">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblBookingStatus">
+        <PropertyRef Name="RoomId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblRoom_tblHotel">
+    <End Role="tblHotel" Type="Self.tblHotel" Multiplicity="1" />
+    <End Role="tblRoom" Type="Self.tblRoom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblHotel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblRoom">
+        <PropertyRef Name="HotelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WebApiAssEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblBookingStatus" EntityType="Self.tblBookingStatu" />
+    <EntitySet Name="tblHotels" EntityType="Self.tblHotel" />
+    <EntitySet Name="tblRooms" EntityType="Self.tblRoom" />
+    <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
+    <AssociationSet Name="FK_tblBookingStatus_tblRoom" Association="Self.FK_tblBookingStatus_tblRoom">
+      <End Role="tblRoom" EntitySet="tblRooms" />
+      <End Role="tblBookingStatus" EntitySet="tblBookingStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblRoom_tblHotel" Association="Self.FK_tblRoom_tblHotel">
+      <End Role="tblHotel" EntitySet="tblHotels" />
+      <End Role="tblRoom" EntitySet="tblRooms" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
