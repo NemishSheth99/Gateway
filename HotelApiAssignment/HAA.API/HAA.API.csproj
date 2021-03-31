@@ -178,7 +178,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="libman.json" />
     <Content Include="Web.config" />

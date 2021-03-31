@@ -1,4 +1,5 @@
 ﻿using HAA.API.Helper;
+using Swashbuckle.Application;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,15 @@ namespace HAA.API
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-            
+
+            config.Routes.MapHttpRoute(
+                name: "swagger", 
+                routeTemplate: "", 
+                defaults: null, 
+                constraints: null, 
+                handler: new RedirectHandler((url => url.RequestUri.ToString()), "swagger")
+             );
+
         }
     }
 }
